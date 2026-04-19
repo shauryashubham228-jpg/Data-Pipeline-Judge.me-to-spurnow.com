@@ -25,7 +25,7 @@ This project automates the extraction of customer reviews and synchronizes them 
 | --- | --- | --- |
 | **Judge.me** | `JUDGEME_API_TOKEN` | Fetches all customer review data. |
 | **Shopify** | `SHOPIFY_TOKEN` | Verifies customer marketing opt-in status. |
-| **Shopify** | `SHOPIFY_STORE` | Target store domain (`lagorii-kids.myshopify.com`). |
+| **Shopify** | `SHOPIFY_STORE` | Target store domain (`laxxxx.myxxxy.com`). |
 | **Spurnow** | **Import Tool** | Final destination for the broadcast list. |
 
 ---
