@@ -1,0 +1,33 @@
+name: "Auto-Generate PM Resume Bullets"
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows you to press a button on GitHub to run it manually
+
+jobs:
+  build-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Gives GitHub Actions permission to write to your files
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run Resume Formatting Engine
+        run: python .github/generate_resume_bullets.py
+
+      - name: Commit and Push Changes to README
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          # Only commit if something actually changed to avoid pipeline loops
+          git diff-index --quiet HEAD || git commit -m "docs: auto-update PM resume bullet points [skip ci]"
+          git push
