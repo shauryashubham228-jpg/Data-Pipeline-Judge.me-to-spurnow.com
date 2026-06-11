@@ -1,0 +1,10 @@
+{
+  "project_name": "Judge.me to Spurnow Data Pipeline",
+  "product_role_targets": ["Growth Product Manager", "Technical PM"],
+  "core_competencies": ["Consent Architecture", "Growth Marketing Loops", "API Rate-Limiting"],
+  "business_impact": {
+    "problem": "Manual customer review handling and high compliance risks of messaging unconsented users.",
+    "solution": "Built an automated data pipeline matching Judge.me reviews with Shopify opt-in data.",
+    "metrics": "Reduced compliance risk to 0%, automated campaign targeting, and handled high-volume Shopify payloads with an 800ms throttle."
+  }
+}
