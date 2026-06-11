@@ -103,3 +103,8 @@ When importing the list into **Spurnow**, map the following:
 - [ ]  Upload CSV to **Spurnow**.
 - [ ]  Verify message variables (`{{product}}`, `{{name}}`) are working.
 - [ ]  **Launch Broadcast.**
+
+### 📊 Automated PM Resume Bullets (Ready to Copy)
+* **Productized an automated Judge.me to Spurnow Data Pipeline** to solve the problem of manual customer review handling and high compliance risks of messaging unconsented users, directly enabling seamless cross-platform data enablement.
+* **Architected a robust Consent Architecture feature** that cross-references user data across endpoints, resulting in a **Reduced compliance risk to 0%** framework prior to marketing campaign delivery.
+* **Designed core technical guardrails around API Rate-Limiting**, optimizing payload deliveries via an intentional delay to preserve platform stability and eliminate upstream API throttling errors.
